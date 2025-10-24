@@ -44,12 +44,12 @@ class ChibiViewProvider {
         const fs = require('fs');
         const possiblePaths = [
             // Check extension's own media folder first (bundled with extension)
-            path.join(this._extensionUri.fsPath, 'media', 'chibi-gif.gif'),
+            path.join(this._extensionUri.fsPath, 'media', 'chibi-gif-2.gif'),
             // Then check workspace locations
-            path.join(workspaceFolder.uri.fsPath, 'media', 'chibi-gif.gif'),
-            path.join(workspaceFolder.uri.fsPath, 'media2', 'chibi-gif.gif'),
-            path.join(workspaceFolder.uri.fsPath, 'chibi-gif.gif'),
-            path.join(workspaceFolder.uri.fsPath, '..', 'media', 'chibi-gif.gif'),
+            path.join(workspaceFolder.uri.fsPath, 'media', 'chibi-gif-2.gif'),
+            path.join(workspaceFolder.uri.fsPath, 'media2', 'chibi-gif-2.gif'),
+            path.join(workspaceFolder.uri.fsPath, 'chibi-gif-2.gif'),
+            path.join(workspaceFolder.uri.fsPath, '..', 'media', 'chibi-gif-2.gif'),
         ];
 
         let gifPath = null;
