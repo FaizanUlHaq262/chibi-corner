@@ -1,0 +1,47 @@
+{
+  "name": "chibi-corner",
+  "displayName": "Chibi Corner",
+  "description": "Cute chibi animation in Explorer sidebar",
+  "version": "0.0.1",
+  "publisher": "faizanulhaq",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "chibiCorner",
+          "name": "Chibi Corner"
+        }
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FaizanUlHaq262/chibi-corner.git"
+  },
+  "homepage": "https://github.com/FaizanUlHaq262/chibi-corner",
+  "bugs": {
+    "url": "https://github.com/FaizanUlHaq262/chibi-corner/issues"
+  },
+  "license": "Apache-2.0",
+  "icon": "media/chibi-gif-2.gif",
+  "files": [
+    "extension.js",
+    "media/**",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "package": "vsce package"
+  },
+  "author": {
+    "name": "Faizan Ul Haq"
+  }
+}
