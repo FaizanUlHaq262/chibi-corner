@@ -1,0 +1,28 @@
+{
+  "name": "chibi-corner",
+  "displayName": "Chibi Corner",
+  "description": "Cute chibi animation in explorer",
+  "version": "0.0.1",
+  "publisher": "faizanulhaq264",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "type": "webview",
+          "id": "chibiCorner",
+          "name": "Chibi Corner"
+        }
+      ]
+    }
+  },
+  "files": [
+    "extension.js",
+    "media/**"
+  ]
+}
